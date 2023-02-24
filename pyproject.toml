@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dp-gp-cluster"
+version = "0.1.0"
+description = ""
+authors = ["L Fahn-Lai <l.fahnlai@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+ipykernel = "^6.21.2"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

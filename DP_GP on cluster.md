@@ -54,3 +54,8 @@ cd DP_GP
 DP_GP_cluster.py -i test/test.txt -o test/test -p png -n 20 --plot
 ```
 This should spit out a bunch of new files in the test directory.
+```
+<!-- convert xenopus file to log10, replace -inf with 0s, rename column 1 to gene -->
+scp ./test/xen_cluster_no_log_nans.txt jkaustiff@login.rc.fas.harvard.edu:/n/holylabs/LABS/hanken_lab/Users/jkaustiff/DP_GP_cluster-master/xen_cluster_no_log_nans.txt
+DP_GP_cluster.py -i  /n/holylabs/LABS/hanken_lab/Users/jkaustiff/DP_GP_cluster-master/xen_cluster_no_log_nans.txt -o /n/holylabs/LABS/hanken_lab/Users/jkaustiff/DP_GP_cluster-master/xen_cluster_output -p png -n 20 --plot --criterion MAP
+```
